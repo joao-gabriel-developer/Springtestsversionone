@@ -1,13 +1,14 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="en" xmlns:th="http://www.thymeleaf.org">
 <head>
     <meta charset="UTF-8">
     <title>Welcomne to my Application!!</title>
+    <link rel="stylesheet" type="text/css" th:href="@{/webjars/css/bootstrap.min.css}">
 </head>
 <body>
-<div align="center">
+<div class="container-fluid text-center">
     <h1>Welcome to my application</h1>
-    <h2><a href="/users">Manage Users</a></h2>
+    <h2><a class="h2" th:href="@{/users}">Manage Users</a></h2>
 </div>
 </body>
 </html>
